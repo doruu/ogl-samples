@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E59D2DD41E72773A00EA0BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D2DD31E72773A00EA0BE5 /* AppDelegate.swift */; };
+		E59D2DD61E72773A00EA0BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D2DD51E72773A00EA0BE5 /* ViewController.swift */; };
+		E59D2DD81E72773A00EA0BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59D2DD71E72773A00EA0BE5 /* Assets.xcassets */; };
+		E59D2DDB1E72773A00EA0BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59D2DD91E72773A00EA0BE5 /* Main.storyboard */; };
+		E59D2DE31E72777200EA0BE5 /* GstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D2DE21E72777200EA0BE5 /* GstView.swift */; };
+		E59D2DE91E727D3600EA0BE5 /* RenderMan.cc in Sources */ = {isa = PBXBuildFile; fileRef = E59D2DE51E727D3600EA0BE5 /* RenderMan.cc */; };
+		E59D2DEA1E727D3600EA0BE5 /* RenderManBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = E59D2DE81E727D3600EA0BE5 /* RenderManBridge.mm */; };
+		E59D2DED1E727E1900EA0BE5 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59D2DEC1E727E1900EA0BE5 /* GStreamer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E59D2DD01E72773A00EA0BE5 /* gstviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gstviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59D2DD31E72773A00EA0BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E59D2DD51E72773A00EA0BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E59D2DD71E72773A00EA0BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E59D2DDA1E72773A00EA0BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E59D2DDC1E72773A00EA0BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59D2DE21E72777200EA0BE5 /* GstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GstView.swift; sourceTree = "<group>"; };
+		E59D2DE41E727D3500EA0BE5 /* gstviewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gstviewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		E59D2DE51E727D3600EA0BE5 /* RenderMan.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderMan.cc; sourceTree = "<group>"; };
+		E59D2DE61E727D3600EA0BE5 /* RenderMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderMan.h; sourceTree = "<group>"; };
+		E59D2DE71E727D3600EA0BE5 /* RenderManBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderManBridge.h; sourceTree = "<group>"; };
+		E59D2DE81E727D3600EA0BE5 /* RenderManBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderManBridge.mm; sourceTree = "<group>"; };
+		E59D2DEC1E727E1900EA0BE5 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../../Library/Frameworks/GStreamer.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E59D2DCD1E72773A00EA0BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59D2DED1E727E1900EA0BE5 /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E59D2DC71E72773A00EA0BE5 = {
+			isa = PBXGroup;
+			children = (
+				E59D2DD21E72773A00EA0BE5 /* gstviewer */,
+				E59D2DD11E72773A00EA0BE5 /* Products */,
+				E59D2DEB1E727E1900EA0BE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E59D2DD11E72773A00EA0BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E59D2DD01E72773A00EA0BE5 /* gstviewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E59D2DD21E72773A00EA0BE5 /* gstviewer */ = {
+			isa = PBXGroup;
+			children = (
+				E59D2DE51E727D3600EA0BE5 /* RenderMan.cc */,
+				E59D2DE61E727D3600EA0BE5 /* RenderMan.h */,
+				E59D2DE71E727D3600EA0BE5 /* RenderManBridge.h */,
+				E59D2DE81E727D3600EA0BE5 /* RenderManBridge.mm */,
+				E59D2DE21E72777200EA0BE5 /* GstView.swift */,
+				E59D2DD31E72773A00EA0BE5 /* AppDelegate.swift */,
+				E59D2DD51E72773A00EA0BE5 /* ViewController.swift */,
+				E59D2DD71E72773A00EA0BE5 /* Assets.xcassets */,
+				E59D2DD91E72773A00EA0BE5 /* Main.storyboard */,
+				E59D2DDC1E72773A00EA0BE5 /* Info.plist */,
+				E59D2DE41E727D3500EA0BE5 /* gstviewer-Bridging-Header.h */,
+			);
+			path = gstviewer;
+			sourceTree = "<group>";
+		};
+		E59D2DEB1E727E1900EA0BE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E59D2DEC1E727E1900EA0BE5 /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E59D2DCF1E72773A00EA0BE5 /* gstviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59D2DDF1E72773A00EA0BE5 /* Build configuration list for PBXNativeTarget "gstviewer" */;
+			buildPhases = (
+				E59D2DCC1E72773A00EA0BE5 /* Sources */,
+				E59D2DCD1E72773A00EA0BE5 /* Frameworks */,
+				E59D2DCE1E72773A00EA0BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gstviewer;
+			productName = gstviewer;
+			productReference = E59D2DD01E72773A00EA0BE5 /* gstviewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E59D2DC81E72773A00EA0BE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = vicsway;
+				TargetAttributes = {
+					E59D2DCF1E72773A00EA0BE5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T2U9MYDDEK;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E59D2DCB1E72773A00EA0BE5 /* Build configuration list for PBXProject "gstviewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E59D2DC71E72773A00EA0BE5;
+			productRefGroup = E59D2DD11E72773A00EA0BE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E59D2DCF1E72773A00EA0BE5 /* gstviewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E59D2DCE1E72773A00EA0BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59D2DD81E72773A00EA0BE5 /* Assets.xcassets in Resources */,
+				E59D2DDB1E72773A00EA0BE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E59D2DCC1E72773A00EA0BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59D2DE91E727D3600EA0BE5 /* RenderMan.cc in Sources */,
+				E59D2DE31E72777200EA0BE5 /* GstView.swift in Sources */,
+				E59D2DEA1E727D3600EA0BE5 /* RenderManBridge.mm in Sources */,
+				E59D2DD61E72773A00EA0BE5 /* ViewController.swift in Sources */,
+				E59D2DD41E72773A00EA0BE5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E59D2DD91E72773A00EA0BE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59D2DDA1E72773A00EA0BE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E59D2DDD1E72773A00EA0BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E59D2DDE1E72773A00EA0BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E59D2DE01E72773A00EA0BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T2U9MYDDEK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/GStreamer.framework/Headers,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = gstviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vicsway.gstviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gstviewer/gstviewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E59D2DE11E72773A00EA0BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T2U9MYDDEK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/GStreamer.framework/Headers,
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = gstviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vicsway.gstviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gstviewer/gstviewer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E59D2DCB1E72773A00EA0BE5 /* Build configuration list for PBXProject "gstviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59D2DDD1E72773A00EA0BE5 /* Debug */,
+				E59D2DDE1E72773A00EA0BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E59D2DDF1E72773A00EA0BE5 /* Build configuration list for PBXNativeTarget "gstviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59D2DE01E72773A00EA0BE5 /* Debug */,
+				E59D2DE11E72773A00EA0BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E59D2DC81E72773A00EA0BE5 /* Project object */;
+}
